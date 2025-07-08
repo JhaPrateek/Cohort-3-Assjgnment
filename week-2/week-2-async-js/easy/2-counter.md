@@ -10,7 +10,14 @@ Without using setInterval, try to code a counter in Javascript. There is a hint 
 
 
 
-
+let cnt=0;
+fun count(){
+    console.clear();
+    cnt+=1;
+    console.log(cnt);
+    setTimeout(count,1000);
+}
+count();
 
 
 
